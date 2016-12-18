@@ -8,8 +8,8 @@ $config = [
 	BASE_URL => ( array_key_exists( "HTTPS", $_SERVER ) ? "https://" : "http://" ) . $_SERVER[ "HTTP_HOST" ] . dirname( dirname( $_SERVER[ "PHP_SELF" ] ) ) . "/",
 	
 	/* local file system base path to where image directories are located */
-	BASE_DIR => dirname( dirname( $_SERVER[ "SCRIPT_FILENAME" ] ) ) . "/",
-	
+	// BASE_DIR => dirname( dirname( $_SERVER[ "SCRIPT_FILENAME" ] ) ) . "/",
+	BASE_DIR => "/srv/mosaico/",
 	/* url to the uploads folder (relative to BASE_URL) */
 	UPLOADS_URL => "uploads/",
 	

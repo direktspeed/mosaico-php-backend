@@ -35,9 +35,9 @@ if ( array_key_exists( "path", $url ) )
 	//die( "<pre>" . print_r( $request, true ) . "</pre>" );
 	
 	$request_handlers = [
-		"/upload/" => "ProcessUploadRequest",
-		"/img/" => "ProcessImgRequest",
-		"/dl/" => "ProcessDlRequest"
+		"upload/" => "ProcessUploadRequest",
+		"img/" => "ProcessImgRequest",
+		"dl/" => "ProcessDlRequest"
 	];
 	
 	if ( array_key_exists( $request, $request_handlers ) )
